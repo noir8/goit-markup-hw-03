@@ -31,9 +31,17 @@ li {
 ul {
 	padding-inline-start: 0px;
 }
-.main-nav {
+
+.page-header .main-nav {
 	display: flex;
+	justify-content: space-around;
 	align-items: center;
+
+	width: 1600px;
+	height: 81px;
+	border: 1px solid #ececec;
+	padding-left: 215px;
+	padding-right: 215px;
 }
 .logo {
 	font-family: raleway, sans-serif;
@@ -58,6 +66,10 @@ ul {
 .site-nav {
 	display: flex;
 	margin-left: 85px;
+}
+.site-nav .site-nav-list {
+	display: flex;
+	justify-content: flex-start;
 }
 
 .site-nav .item:not(:last-child) {
