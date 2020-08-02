@@ -25,11 +25,20 @@ html {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+h2 {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
 li {
 	list-style: none;
+	overflow: hidden;
 }
 ul {
 	padding-inline-start: 0px;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+p {
 	margin-block-start: 0em;
 	margin-block-end: 0em;
 }
@@ -284,7 +293,7 @@ ul {
 }
 .what-we-do {
 	padding-top: 94px;
-	margin-bottom: 94px;
+	padding-bottom: 94px;
 }
 .what-we-do-list {
 	display: flex;
@@ -310,7 +319,7 @@ ul {
 	color: #212121;
 }
 .what-we-do .what-we-do-img {
-	margin-bottom: -3fpx;
+	margin-bottom: -3px;
 }
 .what-we-do .list-title {
 	background: rgba(47, 48, 58, 0.8);
@@ -330,11 +339,9 @@ ul {
 	color: #ffffff;
 }
 .site-our-team {
-	justify-content: space-between;
-	align-items: baseline;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1600px;
+
 	height: 702px;
 	padding-top: 94px;
 
@@ -382,6 +389,7 @@ ul {
 }
 .site-our-team .teammate-role {
 	font-family: roboto, sans-serif;
+	margin-bottom: 16px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -474,6 +482,9 @@ ul {
 .logo-2 p:visited {
 	color: #000;
 }
+.footer-contacts {
+	padding-top: 20px;
+}
 .footer-contacts span {
 	width: 231px;
 	height: 21px;
@@ -484,6 +495,9 @@ ul {
 	color: #ffffff;
 	text-decoration: none;
 	font-style: normal;
+}
+.contacts-list .item {
+	padding-top: 9px;
 }
 .footer-contacts a {
 	width: 231px;
@@ -498,6 +512,7 @@ ul {
 	color: rgba(255, 255, 255, 0.6);
 }
 .container.footer .footer-button {
+	margin-top: 20px;
 	text-decoration: none;
 	position: absolute;
 	width: 200px;
@@ -521,6 +536,7 @@ ul {
 
 	color: #ffffff;
 }
+
 .container.footer .footer-header {
 	width: 219px;
 	height: 16px;
@@ -535,12 +551,26 @@ ul {
 
 	color: #ffffff;
 }
+.join-us {
+	position: inherit;
+	width: 145px;
+	height: 16px;
 
+	font-family: roboto, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
 .container.footer .join-us-list {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	-top: 30px;
+	margin-top: 20px;
 }
 .join-us-list .item {
 	box-sizing: border-box;
@@ -619,21 +649,6 @@ ul {
 	line-height: 28px;
 
 	letter-spacing: 0.03em;
-
-	color: #ffffff;
-}
-.join-us {
-	position: absolute;
-	width: 145px;
-	height: 16px;
-
-	font-family: roboto, sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
 
 	color: #ffffff;
 }
