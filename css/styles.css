@@ -19,7 +19,7 @@ html {
 	box-sizing: inherit;
 }
 .container {
-	width: 1230px;
+	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -330,7 +330,6 @@ ul {
 	color: #ffffff;
 }
 .site-our-team {
-	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	margin-left: auto;
