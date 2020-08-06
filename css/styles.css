@@ -152,6 +152,7 @@ p {
 	margin-right: auto;
 	margin-top: -1px;
 	padding-top: 200px;
+	padding-bottom: 200px;
 	padding-left: 452px;
 	padding-right: 452px;
 
@@ -417,17 +418,19 @@ p {
 .social-network-list {
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 24px;
+	margin-bottom: 24px;
 
 	justify-content: center;
 }
 .social-network-list .item {
+	display: block;
+	width: 44px;
+	height: 44px;
 	box-shadow: none;
-	border-radius: none;
-	width: 24px;
 }
+
 .social-network-list .item:not(:last-child) {
-	margin-right: 30px;
+	margin-right: 10px;
 }
 .site-our-clients {
 	padding-top: 94px;
@@ -603,8 +606,11 @@ p {
 .portfolio-products a {
 	text-decoration: none;
 }
+.portfolio-product-pic {
+	display: block;
+}
 .portfolio-products .portfolio-product-section-1 {
-	padding: 20px 24px;
+	margin: 20px 24px;
 }
 
 .portfolio-products .item {
