@@ -50,6 +50,7 @@ p {
 	margin-block-start: 0em;
 	margin-block-end: 0em;
 }
+
 .page-header {
 	width: 1600px;
 	height: 81px;
@@ -423,10 +424,15 @@ p {
 	justify-content: center;
 }
 .social-network-list .item {
-	display: block;
+	display: flex;
+	align-items: center;
 	width: 44px;
 	height: 44px;
 	box-shadow: none;
+}
+.social-network-list a {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .social-network-list .item:not(:last-child) {
@@ -469,18 +475,18 @@ p {
 
 	padding: 10px 52px;
 }
-.container.footer {
+.container-footer {
+	background: #2f303a;
+}
+.container-footer .container {
 	display: flex;
 	justify-content: space-between;
-	background: #2f303a;
-	padding: 60px 214px;
-	align-items: baseline;
-	width: 1600px;
-	height: 252px;
-	margin-left: auto;
-	margin-right: auto;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
-.container.footer .logo-2 {
+.container-footer .logo-2 {
+	display: flex;
 	font-family: raleway, sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -500,11 +506,10 @@ p {
 	color: #000;
 }
 .footer-contacts {
-	padding-top: 20px;
+	margin-top: 20px;
 }
+
 .footer-contacts span {
-	width: 231px;
-	height: 21px;
 	font-family: roboto, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -514,12 +519,9 @@ p {
 	font-style: normal;
 }
 .contacts-list .item {
-	padding-top: 9px;
+	margin-top: 9px;
 }
 .footer-contacts a {
-	width: 231px;
-	height: 21px;
-
 	font-family: roboto, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -528,7 +530,7 @@ p {
 	font-style: normal;
 	color: rgba(255, 255, 255, 0.6);
 }
-.container.footer .footer-button {
+.container-footer .footer-button {
 	margin-top: 20px;
 	text-decoration: none;
 	position: absolute;
@@ -554,7 +556,7 @@ p {
 	color: #ffffff;
 }
 
-.container.footer .footer-header {
+.container-footer .footer-header {
 	width: 219px;
 	height: 16px;
 
@@ -569,10 +571,6 @@ p {
 	color: #ffffff;
 }
 .join-us {
-	position: inherit;
-	width: 145px;
-	height: 16px;
-
 	font-family: roboto, sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -583,10 +581,9 @@ p {
 
 	color: #ffffff;
 }
-.container.footer .join-us-list {
+.container-footer .join-us-list {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+
 	margin-top: 20px;
 }
 .join-us-list .item {
