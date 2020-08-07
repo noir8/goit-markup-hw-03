@@ -39,7 +39,6 @@ h3 {
 }
 li {
 	list-style: none;
-	overflow: hidden;
 }
 ul {
 	padding-inline-start: 0px;
@@ -52,10 +51,6 @@ p {
 }
 
 .page-header {
-	width: 1600px;
-	height: 81px;
-	border: 1px solid #ececec;
-
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -99,8 +94,8 @@ p {
 
 .site-nav .link {
 	display: block;
-	padding-top: 27px;
-	padding-bottom: 37px;
+	margin-top: 32px;
+	margin-bottom: 32px;
 
 	font-family: roboto, sans-serif;
 	font-weight: 500;
@@ -110,16 +105,14 @@ p {
 	text-decoration: none;
 	color: #212121;
 	display: block;
-	padding-top: 27px;
-	padding-bottom: 37px;
 }
 .site-nav .link.current {
 	color: #2196f3;
 }
 .head-contacts {
 	display: flex;
-	padding-top: 27px;
-	padding-bottom: 37px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	margin-left: auto;
 }
 .head-contacts .item + .item {
@@ -151,7 +144,6 @@ p {
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -1px;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	padding-left: 452px;
@@ -227,8 +219,8 @@ p {
 	margin-right: 30px;
 }
 .feature-list .description {
-	padding-top: 10px;
-	margin-top: 0px;
+	margin-top: 10px;
+
 	margin-bottom: 0px;
 	font-family: roboto, sans-serif;
 	font-style: normal;
@@ -251,7 +243,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 89px;
+	padding-top: 63px;
 	padding-bottom: 50px;
 }
 .portfolio-overlay .item:not(:last-child) {
@@ -335,18 +327,19 @@ p {
 	margin-bottom: -3px;
 }
 .what-we-do .list-title {
+	padding-top: 27px; /* Знаю,
+что здесь должен быть маржин,
+но фон этого элемента мы размечаем в следующей домашке, а без паддинга этот текст выглядит не как на макете */
+	padding-bottom: 27px;
 	background: rgba(47, 48, 58, 0.8);
 
-	width: 370px;
-	height: 70px;
 	font-family: roboto, sans-serif;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
-	padding-top: 27px;
-	padding-bottom: 27px;
+
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
@@ -448,7 +441,7 @@ p {
 }
 .site-our-clients .our-clients-title {
 	font-family: raleway, sans-serif;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
@@ -480,10 +473,15 @@ p {
 }
 .container-footer .container {
 	display: flex;
-	justify-content: space-between;
 
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+.footer-block-one {
+	margin-right: 69px;
+}
+.footer-block-two {
+	margin-right: 94px;
 }
 .container-footer .logo-2 {
 	display: flex;
@@ -598,7 +596,7 @@ p {
 .portfolio-products {
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 64px;
+	padding-bottom: 94px;
 }
 .portfolio-products a {
 	text-decoration: none;
@@ -624,11 +622,14 @@ p {
 .portfolio-products .portfolio-product-discription:hover {
 	background: rgba(33, 150, 243, 0.9);
 }
+/*
+Разберусь в следующих дз.
+
 .portfolio-products .item:hover {
 	border: 1px solid #eeeeee;
 	box-sizing: border-box;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+}*/
 .portfolio-products .portfolio-product-title {
 	width: 322px;
 	margin-top: 0px;
@@ -656,6 +657,7 @@ p {
 }
 
 .portfolio-products .portfolio-product-discription {
+	display: none;
 	width: 322px;
 	height: 168px;
 	margin-top: 0px;
